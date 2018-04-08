@@ -39,14 +39,7 @@ public class GetContentTask extends AsyncTask<String, Void, String> {
 
             while ((inputString = bufferedReader.readLine()) != null) {
                 builder.append(inputString);
-
-//                int code = urlConnection.getResponseCode();
-//                builder.append(code);
-//                builder.append('\n');
             }
-//            int code = urlConnection.getResponseCode();
-//            builder.append(code);
-//            builder.append('\n');
 
             urlConnection.disconnect();
 

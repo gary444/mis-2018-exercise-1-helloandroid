@@ -28,9 +28,15 @@ public class GetContentTask extends AsyncTask<String, Void, String> {
     @Override
     protected String doInBackground(String... strings) {
 
+        // insert protocol prefix if missing
+        String urlString = strings[0];
+        if (!urlString.startsWith("https://")){
+            urlString = "https://" + urlString;
+        }
+
         String inputString;
         try {
-            URL url = new URL(strings[0]);
+            URL url = new URL(urlString);
             HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
 
             InputStream stream = new BufferedInputStream(urlConnection.getInputStream());

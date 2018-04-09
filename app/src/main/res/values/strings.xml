@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">MIS_1</string>
     <string name="AppTitle">Web Content Retriever</string>
+    <string name="url_input_hint">Enter URL...</string>
+    <string name="retrieve_button_text">Retrieve Content</string>
+    <string name="viewtype_plain">Change to HTML View</string>
+    <string name="viewtype_html">Change to Plain Text View</string>
 </resources>
